@@ -1,3 +1,4 @@
+# Input fuction required for the main function to process files
 function input(name, options) {
   const val = process.env[`INPUT_${name.replace(/ /g, '_').toUpperCase()}`] || '';
   if (options && options.required && !val) {

@@ -1,6 +1,8 @@
+# Include dependencies
 const depcheck = require('depcheck');
 const path = require('path');
 
+# Function to validate the dependencies
 async function validate(Path, options) {
   const fullPath = path.join(__dirname, Path);
   const igFiles = new RegExp(
